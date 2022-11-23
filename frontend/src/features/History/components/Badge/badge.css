@@ -1,0 +1,54 @@
+.badge {
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 5px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+  padding: 2px 5px;
+}
+
+.badge__appointment {
+  background-color: #c0c9ff;
+  border-color: #9faedf;
+}
+
+.badge__observation {
+  background-color: #95ecfd;
+  border-color: #83d4e5;
+}
+
+.badge__condition {
+  background-color: #d9ebba;
+  border-color: #cbd8ad;
+}
+
+.badge__allergy {
+  background-color: #ffbdd9;
+  border-color: #e8aac2;
+}
+
+.badge__medication {
+  background-color: #b6ecd8;
+  border-color: #a4d8c6;
+}
+
+.badge__diagnosis {
+  background-color: #fae5da;
+  border-color: #ead1c1;
+}
+
+.badge__carePlan {
+  background-color: #eec3ee;
+  border-color: #d7b1d5;
+}
+
+.badge__immunization {
+  background-color: rgb(238, 148, 102);
+  border-color: rgb(206, 128, 89);
+}
+
+.badge__procedure {
+  background-color: rgb(153, 243, 117);
+  border-color: rgb(130, 207, 99);
+}

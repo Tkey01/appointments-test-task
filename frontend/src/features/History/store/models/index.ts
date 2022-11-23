@@ -1,0 +1,1 @@
+export { EventsListModel } from "./EventsListModel";
