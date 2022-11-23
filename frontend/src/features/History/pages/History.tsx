@@ -3,7 +3,11 @@ import React, { useEffect, useRef, useState } from "react";
 import { Table } from "../components/Table";
 import { EventDTO } from "../store/dto";
 
-import { getEventsDataRequest, getEventsListRequest } from "../store/reducer";
+import {
+  clearEvents,
+  getEventsDataRequest,
+  getEventsListRequest,
+} from "../store/reducer";
 
 export const History = () => {
   const dispatch = useAppDispatch();
@@ -16,6 +20,10 @@ export const History = () => {
 
   useEffect(() => {
     dispatch(getEventsListRequest());
+
+    return () => {
+      dispatch(clearEvents());
+    };
   }, []);
 
   useEffect(() => {

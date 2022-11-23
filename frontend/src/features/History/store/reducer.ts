@@ -88,6 +88,11 @@ export const historySlice = createSlice({
         }
       });
     },
+
+    clearEvents: (state) => {
+      state.eventsData = initialState.eventsData;
+      state.eventsList = initialState.eventsList;
+    },
   },
 });
 
@@ -98,4 +103,5 @@ export const {
   getEventsDataRequest,
   getEventsDataFailed,
   getEventsDataSucceed,
+  clearEvents,
 } = historySlice.actions;
