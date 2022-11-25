@@ -44,11 +44,11 @@
 }
 
 .badge__immunization {
-  background-color: rgb(238, 148, 102);
-  border-color: rgb(206, 128, 89);
+  background-color: #ee9466;
+  border-color: #ce8059;
 }
 
 .badge__procedure {
-  background-color: rgb(153, 243, 117);
-  border-color: rgb(130, 207, 99);
+  background-color: #99f375;
+  border-color: #82cf63;
 }

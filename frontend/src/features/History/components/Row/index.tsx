@@ -73,15 +73,11 @@ export const Row = (props: Props) => {
           <Shimmer />
         ) : (
           <>
-            {item &&
-              status === Status.succeed &&
-              item.details &&
+            {item.details &&
               item.details[0].toUpperCase() +
                 item.details.slice(1) +
                 `${item.values && item.values.length !== 0 ? ": " : ""}`}
-            {item &&
-              status === Status.succeed &&
-              item.values &&
+            {item.values &&
               item.values.map((value, index, arr) =>
                 typeof value === "string"
                   ? `${value}${index === arr.length - 1 ? "" : ", "}`
@@ -91,11 +87,7 @@ export const Row = (props: Props) => {
         )}
       </div>
       <div className="cell-3">
-        {status === Status.loading ? (
-          <Shimmer />
-        ) : (
-          item && status === Status.succeed && item.code
-        )}
+        {status === Status.loading ? <Shimmer /> : item.code}
       </div>
       <div className="cell-4">
         <span className={!isMainEvent ? "cell-4__date-not-main" : undefined}>
